@@ -5,16 +5,16 @@
 
 <h2>HW3</h2>
 
-@DateTime.Now
 
-@{ 
-    var amount = 100;
-    var isVaild = true;
+@{
+
+    string[] fruits = { "荔枝", "蘋果", "香蕉", "鳳梨", "西瓜" };
 }
 
-<div>@amount</div>
+<ol>
+    @foreach (var item in fruits)
+    {
+        <li>@item</li>
 
-@if (isVaild)
-{
-    <div>isvalid@isVaild</div>
-}
+    }
+</ol>
